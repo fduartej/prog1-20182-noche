@@ -25,6 +25,12 @@ namespace helloworld
             do{
                 Console.WriteLine("Ingrese Nombre:");
                 String firstName=Console.ReadLine(); 
+                Console.WriteLine("Ingrese Apellido:");
+                String lastName=Console.ReadLine(); 
+                Console.WriteLine("Ingrese Edad:");
+                int edad=Int32.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese Tarifa:");
+                int tarifa=Int32.Parse(Console.ReadLine());
                 Console.WriteLine("Ingrese Tipo Empleado:");
                 String tipoEmpleado=Console.ReadLine(); 
                 if(tipoEmpleado.Equals("M")){
@@ -32,6 +38,9 @@ namespace helloworld
                 }else{
                     e=new Worker(1,firstName,null,0,0);
                 }
+                e.CalcularSalario();
+                Console.WriteLine("Salario {0}:",e.Salary);
+
                 Console.WriteLine("Desea salir S/N");
                 salida=Console.ReadLine(); 
             }while( !salida.Equals("S") );
