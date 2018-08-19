@@ -34,9 +34,9 @@ namespace helloworld
                 Console.WriteLine("Ingrese Tipo Empleado:");
                 String tipoEmpleado=Console.ReadLine(); 
                 if(tipoEmpleado.Equals("M")){
-                    e=new Manager(1,firstName,null,0,0);
+                    e=new Manager(1,firstName,lastName,edad,tarifa);
                 }else{
-                    e=new Worker(1,firstName,null,0,0);
+                    e=new Worker(1,firstName,lastName,edad,tarifa);
                 }
                 e.CalcularSalario();
                 Console.WriteLine("Salario {0}:",e.Salary);
