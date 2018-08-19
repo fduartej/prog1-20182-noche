@@ -3,7 +3,7 @@ using System;
 namespace helloworld
 {
 
-    class Manager{
+    class Manager : Employee{
 
     }
 

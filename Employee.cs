@@ -12,6 +12,19 @@ namespace helloworld
 		public int TarifaHora { get; set; }
 		public double Salary { get; set; }
 
+
+        public virtual void CalcularSalario() { }
+
+        public Employee(int id, string firstName, string lastName,
+			int age, int tarifaHora)
+		{
+			Id = id;
+			FirstName = firstName;
+			LastName = lastName;
+			Age = age;
+			TarifaHora = tarifaHora;
+		}
+
     }
 
 }
