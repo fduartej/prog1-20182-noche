@@ -3,7 +3,7 @@ using System;
 namespace helloworld
 {
 
-    class Employee{
+    abstract class Employee{
 
         public int Id { get; set; }
 		public string FirstName { get; set; }

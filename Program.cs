@@ -19,6 +19,25 @@ namespace helloworld
             Console.WriteLine("Hello World!");
 
 
+            //Classes Demo
+            String salida="N";
+            Employee e=null;
+            do{
+                Console.WriteLine("Ingrese Nombre:");
+                String firstName=Console.ReadLine(); 
+                Console.WriteLine("Ingrese Tipo Empleado:");
+                String tipoEmpleado=Console.ReadLine(); 
+                if(tipoEmpleado.Equals("M")){
+                    e=new Manager(1,firstName,null,0,0);
+                }else{
+                    e=new Worker(1,firstName,null,0,0);
+                }
+                Console.WriteLine("Desea salir S/N");
+                salida=Console.ReadLine(); 
+            }while( !salida.Equals("S") );
+
+
+
             //enum
             if(0 == Action.CREATE ){
                 Console.WriteLine("is Create");
